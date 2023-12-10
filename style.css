@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&family=Noto+Sans:wght@400;700&display=swap');
+
+:root {
+  --white: #FFFFFF;
+  --main: #272B34;
+  --bg: #1B1E22;
+  --gray: #8B8B8B;
+  --bg-players: #3A3E48;
+  --bg-players-light: #494d57;
+  --blue: #1777FF;
+  --bg-light: #2f3543;
+  --blue-light: #5498f7;
+}
+
+.wrapper {
+  background-color: var(--main);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.blockArea {
+  display: flex;
+  flex-wrap: wrap;
+  width: 540px;
+  height: 540px;
+  padding: 10px;
+  background-color: var(--bg);
+  border-radius: 10px;
+}
+
+.blockItem {
+  box-sizing: border-box;
+  cursor: pointer;
+  position: relative;
+  display: flex;
+  padding: 8px;
+  background-color: var(--main);
+  width: 160px;
+  height: 160px;
+  border-radius: 10px;
+  margin: 10px;
+  justify-content: center;
+  align-items: center;
+  transition: all .1s;
+}
+
+.blockItem:hover {
+  background-color: var(--bg-light);
+}
+
+.blockDescription {
+  margin-left: 120px;
+}
+
+.title {
+  font-family: 'Lilita One', sans-serif;
+  color: var(--white);
+  font-size: 48px;
+}
+
+.description {
+  font-family: 'Noto Sans', sans-serif;
+  font-size: 24px;
+  width: 460px;
+  color: var(--gray);
+  margin: 10px 0 40px;
+  line-height: normal;
+}
+
+.text {
+  font-family: 'Noto Sans', sans-serif;
+  font-size: 24px;
+  color: var(--white);
+  margin-bottom: 30px;
+}
+
+.wrapPlayer {
+  cursor: pointer;
+  display: flex;
+}
+
+.player {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 100px;
+  border-radius: 10px;
+  background-color: var(--bg-players);
+  margin-right: 20px;
+  transition: all .1s;
+}
+
+.player:hover, .player:focus {
+  background-color: var(--bg-players-light);
+}
+
+.btnNewGame {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  height: 80px;
+  margin-top: 45px;
+  background-color: var(--blue);
+  color: var(--white);
+  font-family: 'Noto Sans', sans-serif;
+  font-weight: 700;
+  font-size: 32px;
+  user-select: none;
+  cursor: pointer;
+  transition: all .1s;
+}
+
+.btnNewGame:hover {
+  background-color: var(--blue-light);
+}
+
+.btnNewGame:active {
+  background-color: var(--blue);
+}
